@@ -1,0 +1,299 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+
+body {
+    font-family: "Open Sans Condensed", sans-serif;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(37, 49, 65, 0.9) 0%,
+        #253141 75%, 
+        #253141 100%
+        ),
+        url("https://gamereleaseupdate.com/wp-content/uploads/2021/03/Apex-Legends-Update-1.61-Patch-Notes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    padding: 30px;
+}
+
+header .left-menu {
+    display: flex;
+}
+
+header .left-menu .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+header .left-menu .logo i{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+header .left-menu .logo span{
+    color: #00b4f0;
+}
+
+header .left-menu .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header .left-menu .menu a {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .1s ease-in-out;
+}
+header .left-menu .menu a:hover {
+    color: rgb(255,255,255);
+}
+
+header .fa-angle-down {
+margin-left: 10px;
+}
+
+header .right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .right-menu .language {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    padding: 0 60px 0 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+header .right-menu .language:hover {
+    color: rgb(255,255,255);
+}
+
+header .right-menu .sign-in {
+    background: #0375d5;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    font-size: .85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#featured {
+    padding: 30px 0;
+}
+
+#featured .videos-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 620px 2fr 1fr;
+    grid-gap: 10px;
+}
+
+#featured .videos-section .video {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#featured .videos-section .video .image {
+    width: 100%;
+    height: 300px;
+    background: url("https://i.ytimg.com/vi/VnORLTmkN4k/maxresdefault.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;  
+
+}
+
+#featured .videos-section .video.center {
+    width: 100%;
+    height: 349px;
+    background: red;
+}
+
+#featured .videos-section .center .image {
+    width: 100%;
+    height: 349px;
+    background: url("https://i.ytimg.com/vi/fOfwPmi8X6k/maxresdefault.jpg");
+    transform: scale(1.025);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #00b4f0;  
+}
+
+#featured .videos-section .video:nth-child(1) .image,
+#featured .videos-section .video:nth-child(5) .image {
+    position: relative;
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+#featured .videos-section .video:nth-child(1) .image .arrow:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+#featured .videos-section .video:nth-child(5) .image .arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    padding: 10px;
+    right: 0;
+    transition: all .2s ease-in-out;
+}
+#featured .videos-section .video:nth-child(5) .image .arrow:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+#featured .videos-section .video:nth-child(1) .image .arrow .fa,
+#featured .videos-section .video:nth-child(5) .image .arrow .fa {
+    font-size: 4rem;
+    color: #00b4f0;
+}
+
+#featured .dots {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+#featured .dots .circle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    width: 40px;
+
+
+
+}
+#featured .dots .circle .bgc {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    transition: all .2s ease-in-out;
+}
+#featured .dots .circle:hover .bgc {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00b4f0;
+    position: relative;
+    bottom: 5px;
+}
+
+#featured .dots .active .bgc {
+    position: relative;
+    bottom: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #00b4f0;
+}
+
+
+#top-games .games {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+#top-games .games .game {
+    height: 300px;
+    border-radius: 5px;
+    background: url("https://th.bing.com/th/id/OIP.VQeHOu34vdnK8PSPHaqMdgAAAA?pid=ImgDet&rs=1");
+    background-position: top-center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+
+}
+#top-games .games .game:hover {
+    transform: scale(1.05);
+}
+
+#top-games .games .game img {
+object-fit: cover;
+}
+
+#top-games .games .game .info {
+    background: #253041;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+
+}
+#top-games .games .game:hover .info {
+    background: #313f55;
+}
+
+
+#top-games .games .game .info .title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#top-games .games .game .info .views {
+    font-weight: 300;
+    color: #8c919d;
+    font-size: 0.9rem;
+}
+
+#top-games .games .game .info .views .fa {
+    margin-right: 10px;
+}
